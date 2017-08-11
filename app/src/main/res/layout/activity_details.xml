@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.liyang.mynewfragment.DetailsActivity"
+    android:weightSum="1">
+
+    <ScrollView
+        android:id="@+id/detail_scollview"
+        android:layout_width="match_parent"
+        android:layout_height="324dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_weight="0.83"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/details_img"
+                android:layout_width="match_parent"
+                android:layout_height="203dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/details_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/details_ifo"
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:layout_weight="0.53"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="87dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="商品名："
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/details_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.36"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="89dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="分类："
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/details_clssification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="88dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="商品详情："
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/details_des"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/details_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/pricered"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:orientation="vertical">
+
+                <WebView
+                    android:id="@+id/text_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="买家评价"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:id="@+id/eva_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="264dp"
+                  />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="69dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_weight="0.14">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.55">
+
+            <TextView
+                android:id="@+id/buycount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.20"
+                android:gravity="center"
+                android:text="选择1件" />
+
+            <NumberPicker
+                android:id="@+id/numberPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.54" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/totalprice"
+                android:layout_width="124dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="TextView"
+                android:layout_weight="1.81" />
+
+            <Button
+                android:id="@+id/button_card"
+                android:layout_width="237dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_weight="1"
+                android:background="@color/pricered"
+                android:text="加入购物车"
+                android:textColor="@color/avoscloud_feedback_white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

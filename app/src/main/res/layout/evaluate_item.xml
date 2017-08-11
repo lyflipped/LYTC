@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.09">
+
+        <TextView
+            android:id="@+id/eva_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/eva_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:layout_weight="1"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        style="?android:attr/ratingBarStyleSmall"
+        android:numStars="5"
+        android:rating="4"
+        android:stepSize="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.15"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/eva_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+</LinearLayout>

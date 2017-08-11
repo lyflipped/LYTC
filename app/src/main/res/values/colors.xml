@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="color_hui">#FAFAFA</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="lightwhite">#FFFFFF</color>
+    <color name="white">#FAFAFA</color>
+    <color name="red">#f00</color>
+    <color name="pricered">#ef5b9c</color>
+    <color name="hui">#c0c0c0</color>
+    <color name="avoscloud_blue">#3f51b5</color>
+    <color name="avoscloud_feedback_white">#ffffff</color>
+    <color name="login_blue">	#1E90FF</color>
+    <color name="guide_hui">#737373</color>
+</resources>

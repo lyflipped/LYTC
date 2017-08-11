@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:weightSum="1"
+    android:background="@color/avoscloud_feedback_white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="0.63">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/avoscloud_feedback_white"
+            android:gravity="center"
+            android:background="@drawable/zhonguofeng1"
+            android:textSize="35dp"
+            android:textStyle="italic"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="0.32"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/et_name"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="user name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="password"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="202dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="登     录"
+          android:textColor="@color/avoscloud_blue"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="新用户点这里注册"
+            android:textColor="@color/pricered"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

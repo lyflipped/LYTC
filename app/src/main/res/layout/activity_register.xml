@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.53">
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:background="@drawable/zgf3"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:textColor="@color/avoscloud_feedback_white"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:orientation="vertical"
+        android:layout_weight="0.36"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/et_write_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="username"
+            android:gravity="center"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_write_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/et_write_repwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="re_password"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="0.77">
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="63dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="注    册"
+                android:textColor="@color/avoscloud_blue"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/fanhui"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1.00"
+                android:gravity="center"
+                android:text="点击返回登录页"
+                android:textSize="15dp"
+                android:textColor="@color/pricered"
+                 />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
